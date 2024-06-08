@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta name="theme-color" content="#eae1cd" />
+    <title>Casino</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="robots" content="noindex, nofollow" />
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=auto"
+      rel="stylesheet"
+    />
+
+    <meta name="description" content="Online Casino, slot & poker game" />
+
+    <style>
+      :root {
+        box-sizing: border-box;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        min-height: 100%;
+        background-color: hsl(41, 41%, 86%);
+      }
+
+      .loading-screen {
+        width: 100%;
+        padding: 0 1.5rem;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        background-color: hsl(43, 40%, 86%);
+      }
+
+      .no-script {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .no-script img {
+        width: 100%;
+        max-width: 320px;
+      }
+
+      .no-script p {
+        font-size: 1.5rem;
+        font-family: "Roboto", sans-serif;
+        color: hsl(36, 71%, 3%);
+        text-align: center;
+        margin-top: 3rem;
+        padding: 1rem 2rem;
+        background-color: hsl(49, 63%, 92%);
+        border-radius: 2rem;
+      }
+
+      .custom-loader {
+        transform: scale(1);
+        animation: pulse 0.75s infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(0.85);
+        }
+
+        70% {
+          transform: scale(1.25);
+        }
+
+        100% {
+          transform: scale(0.85);
+        }
+      }
+
+      #root,
+      #cookie-banner {
+        opacity: 0;
+        animation: fade-in 0.75s ease-out forwards;
+      }
+
+      @keyframes fade-in {
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+
+  <body style="background-color: rgba(0, 0, 0, 0.75)">
+    <div id="root"></div>
+    <div id="cookie-banner" style="display: none"></div>
+    <div id="modal"></div>
+    <script>
+      // document.getElementById("custom-loader").style.display = "block";
+      //document.getElementById("custom-loader-text").style.display = "block";
+    </script>
+  </body>
+</html>

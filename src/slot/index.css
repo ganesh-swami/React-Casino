@@ -1,0 +1,203 @@
+/* @import url('https://fonts.googleapis.com/css?family=Cairo'); */
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  background-color: #280a48;
+}
+
+/* .loser{
+  padding-top: 60px;
+} */
+#repeatButton {
+  appearance: none;
+  border: none;
+  background: url(https://andyhoffman.codes/random-assets/img/slots/repeat.png)
+    transparent 0 0 no-repeat;
+  background-size: cover;
+  width: 48px;
+  height: 48px;
+  /* position: absolute; */
+  top: 410px;
+  right: 500px;
+  cursor: pointer;
+  animation: 6s linear infinite spin;
+}
+.loserstyle {
+  color: white;
+  text-align: center;
+}
+/* table, td, th {
+  border: 1px solid;
+  border-color: white;
+  margin: 10px 10px;
+} */
+#balance {
+  /* position: absolute; */
+  text-align: center;
+  color: white;
+  background-color: #280a48;
+  border-color: white;
+  top: 650px;
+  border-radius: 1;
+  /* border: none; */
+  outline: none;
+  right: 930px;
+  width: 150px;
+  height: 25px;
+}
+#balance1 {
+  /* position: absolute; */
+  text-align: center;
+  color: white;
+  background-color: #280a48;
+  border-radius: 1;
+  border-color: white;
+  top: 650px;
+  right: 670px;
+  width: 150px;
+  height: 25px;
+}
+h1 {
+  font-size: 150%;
+  font-family: "Cairo", sans-serif;
+}
+
+h1 span {
+  color: aliceblue;
+  /* border: 1px solid hsla(208, 100%, 97.1%, .1); */
+  display: inline-block;
+  padding: 0.75rem 1rem;
+}
+
+.icons {
+  display: inline-block;
+  width: 18px;
+  height: 564px;
+
+  /* width: 80px;
+  height: 360px; */
+
+  overflow: hidden;
+  /* background: #280a48 url(https://andyhoffman.codes/random-assets/img/slots/sprite5.png) repeat-y; */
+  background-size: 80px;
+  background: url("./img/symbol1.png") repeat-y;
+  will-change: backgroundPosition;
+  background-size: center;
+  transition: 0.3s background-position ease-in-out;
+  padding: 0 80px;
+  /* transform: translateZ(0); */
+  /* transform: scaleY(.25) ; */
+  /* transform: scale(.25); */
+  border-radius: 1;
+}
+
+/* .icons:nth-child(2) {
+  margin: 0 30px;
+}
+.icons:nth-child(4) {
+  margin: 0 30px;
+} */
+* {
+  box-sizing: border-box;
+}
+/* .input-group{
+  top: 50%;
+  left: 50%;
+  display: flex;
+  position: absolute;
+} */
+.spinner-container {
+  overflow: hidden;
+  height: 632px;
+  /* height: 400px;   */
+  padding: 2em;
+  /* transform: scale(.62, .62); */
+  /* position: absolute;
+  top: 50%;
+  left: 50%; */
+  display: flex;
+  transition: 0.3s transform;
+}
+
+.app-wrap.winner-false {
+  animation: linear 1s spin;
+}
+
+/* .spinner-container::after {
+  position: absolute;
+  content: '';
+  display: block;
+  height: 180px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 30px;
+  left: 30px;
+  background: rgba(255, 0, 0, .1);  
+} */
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  width: 100%;
+  height: 100%;
+}
+/* div {
+  width: 100%;
+  height: 100%;
+} */
+#root {
+  min-height: 100vh;
+  min-width: 100vw;
+  width: 100%;
+  height: 100%;
+}
+.spinner-container-after {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 150px;
+  top: 42%;
+  /* transform: translateY(-50%); */
+  right: 740px;
+  left: 660px;
+  background: rgba(255, 0, 0, 0.1);
+}
+.Loserhead {
+  text-align: center;
+}
+.gradient-fade {
+  position: absolute;
+  top: 28px;
+  right: 32px;
+  bottom: 32px;
+  left: 32px;
+  background: linear-gradient(
+    to bottom,
+    rgb(50, 20, 90) 0%,
+    rgba(50, 20, 90, 0) 7%,
+    rgba(50, 20, 90, 0) 93%,
+    rgba(50, 20, 90, 1) 100%
+  );
+}
+
+/* @media screen and (max-width: 1000px) {
+  .spinner-container {
+    transform: translate(-50%, -50%) scale(.55, .55);
+  }
+} */
+
+/* @media screen and (max-width: 500px) {
+  .spinner-container {
+    transform: translate(-50%, -50%) scale(.4, .4);
+  }
+} */
+@media (max-width: 500px) {
+  .icons {
+    background: url("./img/symbol2.png") repeat-y;
+    padding: 0 40px;
+  }
+}

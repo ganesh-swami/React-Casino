@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+.content-title {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.content-paragraph {
+  font-size: 12px;
+  color: "#ccc";
+  font-weight: 400;
+}
+
+.link-header {
+  font-size: 0.8em;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.link-header:hover {
+  font-size: 0.8em;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.register-play {
+  color: white;
+  font-size: 13px;
+  border-radius: 20px;
+  border: 1px rgb(219, 75, 92) solid;
+  padding: 8px 20px;
+}
+
+.go-on-play {
+  color: white;
+  font-size: 13px;
+  border-radius: 20px;
+  border: 1px rgb(219, 75, 92) solid;
+  padding: 8px 70px;
+}
+
+.carousel {
+  width: 80%;
+  background-color: aliceblue;
+  height: 200px;
+  align-items: center;
+}
+
+.input-register {
+  font-size: 14px;
+  text-align: center;
+}
+
+.input1-register {
+  padding: 10px 50px;
+  color: white;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  background-color: transparent;
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px rgba(63, 58, 58, 0.75) inset;
+  transition: background-color 5000s ease-in-out 0s;
+  border-radius: 20px;
+}
+
+.input-register:hover {
+  font-size: 14px;
+  border-color: cadetblue;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+.input-login:-moz-placeholder {
+  text-align: center;
+}
+
+.lobby-header-link {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.lobby-button {
+  color: white;
+  font-size: 13px;
+  border-radius: 20px;
+  border: 1px white solid;
+  padding: 4px 24px;
+  margin-right: 16px;
+  width: "15%";
+}
+
+.lobby-button:hover {
+  color: white;
+  font-size: 13px;
+  border-radius: 20px;
+  border: 1px white solid;
+  padding: 4px 24px;
+  margin-right: 16px;
+  background-color: rgb(219, 75, 92);
+}
+
+.lobby-button:visited,
+.lobby-button:focus {
+  color: white;
+  font-size: 13px;
+  border-radius: 20px;
+  border: 1px white solid;
+  padding: 4px 24px;
+  margin-right: 16px;
+  background-color: rgb(219, 75, 92);
+}
+
+.lobby-search-bar {
+  color: rgb(192, 193, 201);
+  font-size: 14px;
+  border: 1px black solid;
+  padding: 8px 24px;
+  border-right: none;
+}
+
+.lobby-search-span {
+  color: rgb(219, 75, 92);
+  float: right;
+}
+
+.lobby-search-group {
+  background-color: rgb(47, 49, 55);
+}
+
+.table-th {
+  color: rgb(134, 133, 138);
+  font-size: 11px;
+  padding: 8px 24px;
+}
+
+.lobby-thead {
+  background-color: rgb(29, 28, 35);
+}
+
+.lobby-tbody {
+  font-size: 11px;
+  color: rgb(192, 193, 201);
+}
+
+.td-register {
+  color: green;
+  border: 1px green solid;
+  padding: 2px 24px;
+  border-radius: 20px;
+}
+
+.footer-span {
+  font-size: 11px;
+  margin-right: 40px;
+}
+
+.deposit-comment {
+  background-color: rgb(47, 49, 55);
+  color: white;
+  margin: 20px 30px;
+  padding: 10px 10px;
+  font-size: 13px;
+}
+
+.deposit-radio {
+  font-size: 30px;
+}
+
+.deposit-radio-group {
+  margin: 20px 30px;
+  color: white;
+}
+
+.deposit-input {
+  background-color: transparent;
+  color: white;
+  font-size: 13px;
+  border-radius: 20px;
+  border: 1px white solid;
+  padding: 4px 12px;
+  margin-right: 16px;
+  width: 120px;
+}
+
+.deposit-button {
+  background-color: transparent;
+  color: white;
+  font-size: 13px;
+  border-radius: 20px;
+  border: 1px green solid;
+  padding: 4px 64px;
+  margin-right: 16px;
+}
+
+.deposit-button:hover {
+  background-color: transparent;
+  color: white;
+  font-size: 13px;
+  border-radius: 20px;
+  border: 1px green solid;
+  padding: 4px 64px;
+  margin-right: 16px;
+}
+
+.deposit-fee {
+  font-size: 12px;
+}
+
+.deposit-span {
+  color: rgb(219, 75, 92);
+}
+
+.deposit-learnHow {
+  color: white;
+  font-size: 13px;
+  border-radius: 20px;
+  border: 1px rgb(219, 75, 92) solid;
+  padding: 8px 70px;
+}
+
+.bonus-comment {
+  background-color: rgb(37, 38, 46);
+  color: white;
+  padding: 10px 10px;
+  font-size: 13px;
+}
+
+.bonus-pending {
+  font-size: 10px;
+}
+
+.bonus-search-bar {
+  color: rgb(192, 193, 201);
+  font-size: 14px;
+  padding: 8px 24px;
+  border-right: none;
+  background-color: rgb(48, 49, 58);
+  margin: 1px 5px;
+}
+
+.bonus-span-result {
+  color: burlywood;
+}
+
+.new-room-button {
+  color: white;
+}
+
+tbody {
+  overflow: auto;
+}
+
+tr {
+  display: block;
+}
+
+th,
+td {
+  padding: 5px;
+  text-align: center;
+}
+
+.td-class {
+  @apply px-4 py-3 bg-gray-200 first:rounded-t-lg last:rounded-b-lg sm:first:rounded-t-none sm:last:rounded-b-none sm:first:rounded-tl-lg sm:first:rounded-bl-lg sm:last:rounded-tr-lg sm:last:rounded-br-lg;
+}
+
+.tr-class {
+  @apply flex flex-col mb-4 sm:table-row;
+}
+
+#reelColumn1,
+#reelColumn2,
+#reelColumn3 {
+  height: 240px;
+  width: 150px;
+  border: solid black 5px;
+  border-radius: 5px;
+  background: linear-gradient(black, gray, white, gray, black);
+  margin: 3px;
+  text-align: center;
+  padding-top: 25px;
+}
+
+#reelColumn1 img,
+#reelColumn2 img,
+#reelColumn3 img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.slotImg {
+  height: 30px;
+  width: 30px;
+  display: inline;
+  margin-bottom: 5px;
+}
+
+.multiplier-item1 {
+  margin-top: 19px;
+}
+
+.multiplier-item2 {
+  margin-top: 17px;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
