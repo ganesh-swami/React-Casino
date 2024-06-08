@@ -47,7 +47,7 @@ const useAuth = () => {
   const login = async (emailAddress, password) => {
     setIsLoading(true);
     try {
-      const res = await Axios.post("http://" + config.serverURI + "/api/auth", {
+      const res = await Axios.post(config.serverURI + "/api/auth", {
         email: emailAddress,
         password,
       });
@@ -67,7 +67,7 @@ const useAuth = () => {
 
   const loadUser = async (token) => {
     try {
-      const res = await Axios.get("http://" + config.serverURI + "/api/auth", {
+      const res = await Axios.get(config.serverURI + "/api/auth", {
         headers: {
           "x-auth-token": token,
         },
