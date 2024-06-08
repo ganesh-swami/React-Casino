@@ -8,7 +8,8 @@ const config = {
   //   ? process.env.REACT_APP_SERVER_URI
   //   : `http://${window.location.hostname}:5000/`,
   // @gscode i comment this ==> serverURI: "44.217.139.110",
-  // serverURI: "192.168.145.23:5000",
+  //serverURI: "192.168.145.23:5000",
+  serverURI: "https://node-casino.onrender.com",
 };
 
 export default config;
