@@ -82,7 +82,7 @@ export default class App extends React.Component {
       };
 
       const res = await Axios.post(
-        "http://" + config.serverURI + "/api/slotchips/slot",
+        config.serverURI + "/api/slotchips/slot",
         {
           slotchips: chips,
         },
@@ -380,7 +380,7 @@ export default class App extends React.Component {
                 </p>
               </div>
               <button
-                onClick={this.onClick} 
+                onClick={this.onClick}
                 className="w-full border justify-center flex mt-3"
                 style={{
                   border: "1px #ccc solid",
@@ -553,13 +553,6 @@ export default class App extends React.Component {
             </div>
           </div>
         </div>
-
-
-
-
-
-
-
 
         <div className="w-full md:flex md:flex-row md:justify-center mt-12 text-white text-center">
           <span class="relative h-3 w-3 mr-2">

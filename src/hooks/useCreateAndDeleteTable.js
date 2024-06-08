@@ -8,12 +8,9 @@ const useCreateAndDeleteTable = () => {
   const createTable = async (seatNumber) => {
     try {
       console.log("seatNumber", seatNumber);
-      const res = await Axios.post(
-        "http://" + config.serverURI + "/api/currentTables",
-        {
-          seatNumber,
-        }
-      );
+      const res = await Axios.post(config.serverURI + "/api/currentTables", {
+        seatNumber,
+      });
       setEntryTableId(res.data.currentTable.tableNumber);
       console.log("currentTable", res.data.currentTable.tableNumber);
       console.log("entryTableId---------------------", entryTableId);
@@ -25,9 +22,7 @@ const useCreateAndDeleteTable = () => {
   const getCurrentTable = async () => {
     try {
       // console.log("wewewe")
-      const res = await Axios.get(
-        "http://" + config.serverURI + "/api/currentTables"
-      );
+      const res = await Axios.get(config.serverURI + "/api/currentTables");
       // console.log("currentTables", res.data.currentTable)
       const { currentTable } = res.data;
       console.log("currentTable -----------", currentTable);
@@ -44,9 +39,7 @@ const useCreateAndDeleteTable = () => {
 export const getCurrentTable = async () => {
   try {
     // console.log("wewewe")
-    const res = await Axios.get(
-      "http://" + config.serverURI + "/api/currentTables"
-    );
+    const res = await Axios.get(config.serverURI + "/api/currentTables");
     // console.log("currentTables", res.data.currentTable)
     const { currentTable } = res.data;
     return currentTable;

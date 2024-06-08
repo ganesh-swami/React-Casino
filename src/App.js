@@ -35,14 +35,11 @@ const App = () => {
       const token = localStorage.token;
       alert(config.serverURI);
 
-      const res = await Axios.get(
-        "http://" + config.serverURI + "/api/chips/free",
-        {
-          headers: {
-            "x-auth-token": token,
-          },
-        }
-      );
+      const res = await Axios.get(config.serverURI + "/api/chips/free", {
+        headers: {
+          "x-auth-token": token,
+        },
+      });
 
       const { chipsAmount } = res.data;
 

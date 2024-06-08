@@ -25,14 +25,11 @@ const useAuth = () => {
   const register = async (name, email, password) => {
     setIsLoading(true);
     try {
-      const res = await Axios.post(
-        "http://" + config.serverURI + "/api/users",
-        {
-          name,
-          email,
-          password,
-        }
-      );
+      const res = await Axios.post(config.serverURI + "/api/users", {
+        name,
+        email,
+        password,
+      });
 
       const token = res.data.token;
 
